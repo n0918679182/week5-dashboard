@@ -144,6 +144,7 @@
       </ul>
     </div>
     <div class="card ms-3 mb-3" style="width:70%;">
+
       <div class="card-header d-flex justify-content-between align-items-center">
         <div>
           <p class="mb-1 fsz-12px">Chapter Assignment 2 / HTML&CSS</p>
@@ -155,6 +156,7 @@
           </span>
         </a>
       </div>
+
       <div class="card-body d-flex">
         <a href="#">
           <div class="w-40 h-40 overflow-hidden bg rounded-circle me-3"
@@ -175,7 +177,8 @@
           </a>
         </div>
       </div>
-      <div class="card-body d-flex">
+
+      <div class="card-body d-flex" id="all-response">
         <a href="#">
           <div class="w-40 h-40 overflow-hidden bg rounded-circle me-3"
             style="background-image: url('assets/images/andychen.jpeg');"></div>
@@ -205,9 +208,62 @@
           </p>
         </div>
       </div>
+
+      <div class="d-none border-top" id="response-content">
+        <ul class="card-header list-unstyled d-flex align-items-center py-3 ps-4">
+          <li class="d-flex me-4" role="button">
+            <p class="mb-0 me-2">Body Text</p>
+            <span class="material-symbols-outlined">
+              arrow_drop_down
+            </span>
+          </li>
+          <li class="d-flex me-4" role="button">
+            <span class="material-symbols-outlined">
+              format_bold
+            </span>
+          </li>
+          <li class="d-flex me-4" role="button">
+            <span class="material-symbols-outlined">
+              format_italic
+            </span>
+          </li>
+          <li class="d-flex me-4" role="button">
+            <span class="material-symbols-outlined">
+              format_list_bulleted
+            </span>
+          </li>
+          <li class="d-flex me-4" role="button">
+            <span class="material-symbols-outlined">
+              format_list_numbered
+            </span>
+          </li>
+          <li class="d-flex me-4" role="button">
+            <span class="material-symbols-rounded">
+              image
+            </span>
+          </li>
+          <li class="d-flex me-4" role="button">
+            <span class="material-symbols-outlined">
+              link
+            </span>
+          </li>
+          <li class="d-flex" role="button">
+            <span class="material-symbols-rounded">
+              code
+            </span>
+          </li>
+        </ul>
+        <div class="card-body ps-4 d-flex flex-column justify-content-between" style="height: 263px;">
+          <p class="text-black-50">Reply an answer…</p>
+          <div class="text-end">
+            <a class="btn btn-outline-success bt-padding me-3">Cancel</a>
+            <a class="btn btn-success bt-padding" id="reply-send">Reply</a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="d-flex justify-content-between align-items-center" style="width:69%;margin-left: auto;">
+  <div class="d-flex justify-content-between align-items-center" id="response-ctrl" style="width:69%;margin-left: auto;">
     <div>
       <a href="#">
         <span class="material-symbols-rounded me-3">
@@ -222,8 +278,8 @@
 
     </div>
     <div>
-      <button type="button" class="btn btn-outline-success bt-padding me-3">Mark as read</button>
-      <button type="button" class="btn btn-success bt-padding">Reply</button>
+      <a class="btn btn-outline-success bt-padding me-3">Mark as read</a>
+      <a class="btn btn-success bt-padding" id="reply">Reply</a>
     </div>
   </div>
 </div>
@@ -238,6 +294,7 @@
   integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
   crossorigin="anonymous"></script>
   <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/jquery-3.6.0.min.js"></script>
   <script src="./assets/js/all.js"></script>
 </body>
 
