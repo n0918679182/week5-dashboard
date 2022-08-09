@@ -1,3 +1,6 @@
+.p-4-5{
+  padding: 2rem;
+}
 .ps-4-4{
   padding-left: 1.75rem;
 }
@@ -11,14 +14,24 @@
   padding-right: 2rem;
   padding-left: 2rem;
 }
+.py-4-5{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
 .pt-4-5{
   padding-top: 2rem;
 }
 .pb-4-5{
   padding-bottom: 2rem;
 }
+.mb-20px{
+  margin-bottom: 20px;
+}
 .mb-4-5{
   margin-bottom: 2rem;
+}
+.mb-6{
+  margin-bottom: 4rem;
 }
 
 .w-40{
@@ -49,6 +62,7 @@
       color: #198754;
       border-left: 4px solid #55cb94;
       padding-left: 1.75rem;
+      background: rgba(0, 0, 0, .1);
       a{
         color: #198754;
       }
@@ -61,4 +75,38 @@
 a{
   color: #000;
   text-decoration: none;
+}
+.pointer{
+  cursor: pointer;
+  &:hover{
+    color: #198754;
+  }
+}
+.bg-hover{
+  cursor: pointer;
+  &:hover{
+    background: rgba(0, 0, 0, .1);
+  }
+}
+.bt-hover-success{
+  &:hover{
+    background: #198754 !important;
+    color: #fff !important;
+  }  
+}
+.bt-hover-danger{
+  &:hover{
+    background: #dc3545 !important;
+    color: #fff !important;
+  }  
+}
+.displayNone{
+  display: none;
+}
+.rotate180{
+  transform: rotate(180deg);
+  color: #198754;
+}
+.transition03{
+  transition: .3s;
 }

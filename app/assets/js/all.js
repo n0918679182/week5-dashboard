@@ -11,4 +11,10 @@ $(document).ready(function () {
     $('#response-content').addClass('d-none');
     $('#response-ctrl').removeClass('d-none');
   });
+
+  $('#verifiedBox').click(function (e) { 
+    e.preventDefault();
+    $('#verifiedContent').slideToggle();
+    $('#verifiedArrow').toggleClass('rotate180');
+  });
 });
